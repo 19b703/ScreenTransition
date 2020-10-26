@@ -14,8 +14,9 @@ import android.view.View;
  * Created by utsumi on 2015/10/20.
  */
 public class MainView extends View{
-    public final int FIRST = 1; //状態を表す定数 1
+    public final int FIRST  = 1; //状態を表す定数 1
     public final int SECOND = 2; //状態を表す定数 2
+    public final int THIRD  = 3; //状態を表す定数 2
 
     int state; //状態を表す変数
 
@@ -36,9 +37,13 @@ public class MainView extends View{
 
         if(state == FIRST) { //状態 1 の場合の描画
             p.setColor(Color.BLUE);
-            canvas.drawARGB(255, 255, 255, 255);
+            canvas.drawARGB(255, 255, 0, 0);
             canvas.drawRect(100, 100, 300, 200, p);
         } else if (state == SECOND){ //状態 2 の場合の描画
+            p.setColor(Color.YELLOW);
+            canvas.drawARGB(255, 0, 0, 255);
+            canvas.drawRect(100, 100, 300, 200, p);
+        } else if (state == THIRD){ //状態 3 の場合の描画
             p.setColor(Color.RED);
             canvas.drawARGB(255, 255, 255, 0);
             canvas.drawRect(100, 100, 300, 200, p);
@@ -57,6 +62,8 @@ public class MainView extends View{
             if(state == FIRST){ //状態１だったら状態２へ
                 state = SECOND;
             } else if (state == SECOND){ //状態 2 だったら状態 1 へ
+                state = THIRD;
+            } else if (state == THIRD){ //状態 2 だったら状態 1 へ
                 state = FIRST;
             } else { //それ以外だったらエラーを吐き出す
                 Log.d("error", "never come here");
