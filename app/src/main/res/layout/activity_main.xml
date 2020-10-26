@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-    <jp.ac.shohoku.s19b703.screentransion.MainView
+    <jp.ac.shohoku.s19b703.screentransition.MainView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
