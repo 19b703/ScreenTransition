@@ -23,7 +23,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 /*@auther myu kato*/
-public class TranceActivity extends Activity {
+public class TransActivity extends Activity {
    int count = 1;
    @Override
    protected void onCreate(Bundle savedInstanceState) {
