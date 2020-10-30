@@ -47,9 +47,15 @@
 
                 LinearLayout layout = (LinearLayout) findViewById(R.id.linearlayout2);
                 layout.removeAllViews();
-                getLayoutInflater().inflate(R.layout.view1, layout);
-                count = 1;
-            }
+                getLayoutInflater().inflate(R.layout.view3, layout);
+                count = 3;
+            } else if(count ==3){
+
+                    LinearLayout layout = (LinearLayout) findViewById(R.id.linearlayout3);
+                    layout.removeAllViews();
+                    getLayoutInflater().inflate(R.layout.view1, layout);
+                    count = 1;
+                }
         }
     });
  }
