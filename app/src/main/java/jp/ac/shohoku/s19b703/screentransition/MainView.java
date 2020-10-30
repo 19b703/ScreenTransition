@@ -11,7 +11,7 @@ import android.view.View;
 
 /**
  * 一つの Activty，一つの View で状態遷移する場合
- * Created by utsumi on 2015/10/20.
+ * Created by tada on 2020/10/26.
  */
 public class MainView extends View{
     public final int FIRST  = 1; //状態を表す定数 1
